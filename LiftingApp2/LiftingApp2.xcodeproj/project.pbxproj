@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF847CA71B09304B00E3281D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF847CA61B09304B00E3281D /* AppDelegate.swift */; };
+		BF847CA91B09304B00E3281D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF847CA81B09304B00E3281D /* ViewController.swift */; };
+		BF847CAC1B09304B00E3281D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF847CAA1B09304B00E3281D /* Main.storyboard */; };
+		BF847CAE1B09304B00E3281D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF847CAD1B09304B00E3281D /* Images.xcassets */; };
+		BF847CB11B09304B00E3281D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF847CAF1B09304B00E3281D /* LaunchScreen.xib */; };
+		BF847CBD1B09304B00E3281D /* LiftingApp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF847CBC1B09304B00E3281D /* LiftingApp2Tests.swift */; };
+		BFCEB7491B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7481B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift */; };
+		BFCEB74B1B0AA22000BD41B9 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB74A1B0AA22000BD41B9 /* Workout.swift */; };
+		BFCEB74D1B0AA2F900BD41B9 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB74C1B0AA2F900BD41B9 /* WorkoutManager.swift */; };
+		BFCEB7581B0C11F100BD41B9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7571B0C11F100BD41B9 /* InterfaceController.swift */; };
+		BFCEB75A1B0C11F100BD41B9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7591B0C11F100BD41B9 /* NotificationController.swift */; };
+		BFCEB75C1B0C11F100BD41B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB75B1B0C11F100BD41B9 /* Images.xcassets */; };
+		BFCEB7601B0C11F100BD41B9 /* LiftingApp2 WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB75F1B0C11F100BD41B9 /* LiftingApp2 WatchKit App.app */; };
+		BFCEB7681B0C11F100BD41B9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB7661B0C11F100BD41B9 /* Interface.storyboard */; };
+		BFCEB76A1B0C11F100BD41B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB7691B0C11F100BD41B9 /* Images.xcassets */; };
+		BFCEB76D1B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BFCEB7521B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BFECE88C1B0C1615004CBFB7 /* CreateWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECE88B1B0C1615004CBFB7 /* CreateWorkoutViewController.swift */; };
+		BFECE88E1B0C170A004CBFB7 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECE88D1B0C170A004CBFB7 /* AddExerciseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF847CB71B09304B00E3281D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF847C991B09304B00E3281D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF847CA01B09304B00E3281D;
+			remoteInfo = LiftingApp2;
+		};
+		BFCEB7611B0C11F100BD41B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF847C991B09304B00E3281D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCEB75E1B0C11F100BD41B9;
+			remoteInfo = "LiftingApp2 WatchKit App";
+		};
+		BFCEB76B1B0C11F100BD41B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF847C991B09304B00E3281D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCEB7511B0C11F100BD41B9;
+			remoteInfo = "LiftingApp2 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFCEB7741B0C11F100BD41B9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BFCEB76D1B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF847CA11B09304B00E3281D /* LiftingApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiftingApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF847CA51B09304B00E3281D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF847CA61B09304B00E3281D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF847CA81B09304B00E3281D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF847CAB1B09304B00E3281D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF847CAD1B09304B00E3281D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF847CB01B09304B00E3281D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BF847CB61B09304B00E3281D /* LiftingApp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftingApp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF847CBB1B09304B00E3281D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF847CBC1B09304B00E3281D /* LiftingApp2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingApp2Tests.swift; sourceTree = "<group>"; };
+		BFCEB7481B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutCellTableViewCell.swift; sourceTree = "<group>"; };
+		BFCEB74A1B0AA22000BD41B9 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		BFCEB74C1B0AA2F900BD41B9 /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		BFCEB7521B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LiftingApp2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCEB7551B0C11F100BD41B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCEB7561B0C11F100BD41B9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BFCEB7571B0C11F100BD41B9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BFCEB7591B0C11F100BD41B9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BFCEB75B1B0C11F100BD41B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFCEB75F1B0C11F100BD41B9 /* LiftingApp2 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiftingApp2 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFCEB7651B0C11F100BD41B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFCEB7671B0C11F100BD41B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BFCEB7691B0C11F100BD41B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFECE88B1B0C1615004CBFB7 /* CreateWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWorkoutViewController.swift; sourceTree = "<group>"; };
+		BFECE88D1B0C170A004CBFB7 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF847C9E1B09304B00E3281D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF847CB31B09304B00E3281D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEB74F1B0C11F100BD41B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF847C981B09304B00E3281D = {
+			isa = PBXGroup;
+			children = (
+				BF847CA31B09304B00E3281D /* LiftingApp2 */,
+				BF847CB91B09304B00E3281D /* LiftingApp2Tests */,
+				BFCEB7531B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension */,
+				BFCEB7631B0C11F100BD41B9 /* LiftingApp2 WatchKit App */,
+				BF847CA21B09304B00E3281D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF847CA21B09304B00E3281D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF847CA11B09304B00E3281D /* LiftingApp2.app */,
+				BF847CB61B09304B00E3281D /* LiftingApp2Tests.xctest */,
+				BFCEB7521B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension.appex */,
+				BFCEB75F1B0C11F100BD41B9 /* LiftingApp2 WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF847CA31B09304B00E3281D /* LiftingApp2 */ = {
+			isa = PBXGroup;
+			children = (
+				BFECE8901B0C1EE5004CBFB7 /* Views */,
+				BFECE88F1B0C18AF004CBFB7 /* Domain */,
+				BF847CA61B09304B00E3281D /* AppDelegate.swift */,
+				BF847CAA1B09304B00E3281D /* Main.storyboard */,
+				BF847CAD1B09304B00E3281D /* Images.xcassets */,
+				BF847CAF1B09304B00E3281D /* LaunchScreen.xib */,
+				BF847CA41B09304B00E3281D /* Supporting Files */,
+				BFCEB7481B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift */,
+			);
+			path = LiftingApp2;
+			sourceTree = "<group>";
+		};
+		BF847CA41B09304B00E3281D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF847CA51B09304B00E3281D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF847CB91B09304B00E3281D /* LiftingApp2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BF847CBC1B09304B00E3281D /* LiftingApp2Tests.swift */,
+				BF847CBA1B09304B00E3281D /* Supporting Files */,
+			);
+			path = LiftingApp2Tests;
+			sourceTree = "<group>";
+		};
+		BF847CBA1B09304B00E3281D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF847CBB1B09304B00E3281D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFCEB7531B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEB7571B0C11F100BD41B9 /* InterfaceController.swift */,
+				BFCEB7591B0C11F100BD41B9 /* NotificationController.swift */,
+				BFCEB75B1B0C11F100BD41B9 /* Images.xcassets */,
+				BFCEB7541B0C11F100BD41B9 /* Supporting Files */,
+			);
+			path = "LiftingApp2 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		BFCEB7541B0C11F100BD41B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEB7551B0C11F100BD41B9 /* Info.plist */,
+				BFCEB7561B0C11F100BD41B9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFCEB7631B0C11F100BD41B9 /* LiftingApp2 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEB7661B0C11F100BD41B9 /* Interface.storyboard */,
+				BFCEB7691B0C11F100BD41B9 /* Images.xcassets */,
+				BFCEB7641B0C11F100BD41B9 /* Supporting Files */,
+			);
+			path = "LiftingApp2 WatchKit App";
+			sourceTree = "<group>";
+		};
+		BFCEB7641B0C11F100BD41B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEB7651B0C11F100BD41B9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFECE88F1B0C18AF004CBFB7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BFCEB74C1B0AA2F900BD41B9 /* WorkoutManager.swift */,
+				BFCEB74A1B0AA22000BD41B9 /* Workout.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		BFECE8901B0C1EE5004CBFB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFECE88B1B0C1615004CBFB7 /* CreateWorkoutViewController.swift */,
+				BFECE88D1B0C170A004CBFB7 /* AddExerciseViewController.swift */,
+				BF847CA81B09304B00E3281D /* ViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF847CA01B09304B00E3281D /* LiftingApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF847CC01B09304B00E3281D /* Build configuration list for PBXNativeTarget "LiftingApp2" */;
+			buildPhases = (
+				BF847C9D1B09304B00E3281D /* Sources */,
+				BF847C9E1B09304B00E3281D /* Frameworks */,
+				BF847C9F1B09304B00E3281D /* Resources */,
+				BFCEB7741B0C11F100BD41B9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCEB76C1B0C11F100BD41B9 /* PBXTargetDependency */,
+			);
+			name = LiftingApp2;
+			productName = LiftingApp2;
+			productReference = BF847CA11B09304B00E3281D /* LiftingApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF847CB51B09304B00E3281D /* LiftingApp2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF847CC31B09304B00E3281D /* Build configuration list for PBXNativeTarget "LiftingApp2Tests" */;
+			buildPhases = (
+				BF847CB21B09304B00E3281D /* Sources */,
+				BF847CB31B09304B00E3281D /* Frameworks */,
+				BF847CB41B09304B00E3281D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF847CB81B09304B00E3281D /* PBXTargetDependency */,
+			);
+			name = LiftingApp2Tests;
+			productName = LiftingApp2Tests;
+			productReference = BF847CB61B09304B00E3281D /* LiftingApp2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFCEB7511B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCEB7731B0C11F100BD41B9 /* Build configuration list for PBXNativeTarget "LiftingApp2 WatchKit Extension" */;
+			buildPhases = (
+				BFCEB74E1B0C11F100BD41B9 /* Sources */,
+				BFCEB74F1B0C11F100BD41B9 /* Frameworks */,
+				BFCEB7501B0C11F100BD41B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFCEB7621B0C11F100BD41B9 /* PBXTargetDependency */,
+			);
+			name = "LiftingApp2 WatchKit Extension";
+			productName = "LiftingApp2 WatchKit Extension";
+			productReference = BFCEB7521B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		BFCEB75E1B0C11F100BD41B9 /* LiftingApp2 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFCEB7721B0C11F100BD41B9 /* Build configuration list for PBXNativeTarget "LiftingApp2 WatchKit App" */;
+			buildPhases = (
+				BFCEB75D1B0C11F100BD41B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiftingApp2 WatchKit App";
+			productName = "LiftingApp2 WatchKit App";
+			productReference = BFCEB75F1B0C11F100BD41B9 /* LiftingApp2 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF847C991B09304B00E3281D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Vincent;
+				TargetAttributes = {
+					BF847CA01B09304B00E3281D = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					BF847CB51B09304B00E3281D = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = BF847CA01B09304B00E3281D;
+					};
+					BFCEB7511B0C11F100BD41B9 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					BFCEB75E1B0C11F100BD41B9 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = BF847C9C1B09304B00E3281D /* Build configuration list for PBXProject "LiftingApp2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF847C981B09304B00E3281D;
+			productRefGroup = BF847CA21B09304B00E3281D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF847CA01B09304B00E3281D /* LiftingApp2 */,
+				BF847CB51B09304B00E3281D /* LiftingApp2Tests */,
+				BFCEB7511B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension */,
+				BFCEB75E1B0C11F100BD41B9 /* LiftingApp2 WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF847C9F1B09304B00E3281D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF847CAC1B09304B00E3281D /* Main.storyboard in Resources */,
+				BF847CB11B09304B00E3281D /* LaunchScreen.xib in Resources */,
+				BF847CAE1B09304B00E3281D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF847CB41B09304B00E3281D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEB7501B0C11F100BD41B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEB75C1B0C11F100BD41B9 /* Images.xcassets in Resources */,
+				BFCEB7601B0C11F100BD41B9 /* LiftingApp2 WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEB75D1B0C11F100BD41B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEB7681B0C11F100BD41B9 /* Interface.storyboard in Resources */,
+				BFCEB76A1B0C11F100BD41B9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF847C9D1B09304B00E3281D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEB7491B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift in Sources */,
+				BF847CA91B09304B00E3281D /* ViewController.swift in Sources */,
+				BFCEB74D1B0AA2F900BD41B9 /* WorkoutManager.swift in Sources */,
+				BFECE88E1B0C170A004CBFB7 /* AddExerciseViewController.swift in Sources */,
+				BF847CA71B09304B00E3281D /* AppDelegate.swift in Sources */,
+				BFECE88C1B0C1615004CBFB7 /* CreateWorkoutViewController.swift in Sources */,
+				BFCEB74B1B0AA22000BD41B9 /* Workout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF847CB21B09304B00E3281D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF847CBD1B09304B00E3281D /* LiftingApp2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCEB74E1B0C11F100BD41B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFCEB75A1B0C11F100BD41B9 /* NotificationController.swift in Sources */,
+				BFCEB7581B0C11F100BD41B9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF847CB81B09304B00E3281D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF847CA01B09304B00E3281D /* LiftingApp2 */;
+			targetProxy = BF847CB71B09304B00E3281D /* PBXContainerItemProxy */;
+		};
+		BFCEB7621B0C11F100BD41B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCEB75E1B0C11F100BD41B9 /* LiftingApp2 WatchKit App */;
+			targetProxy = BFCEB7611B0C11F100BD41B9 /* PBXContainerItemProxy */;
+		};
+		BFCEB76C1B0C11F100BD41B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCEB7511B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension */;
+			targetProxy = BFCEB76B1B0C11F100BD41B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF847CAA1B09304B00E3281D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF847CAB1B09304B00E3281D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF847CAF1B09304B00E3281D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF847CB01B09304B00E3281D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		BFCEB7661B0C11F100BD41B9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFCEB7671B0C11F100BD41B9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF847CBE1B09304B00E3281D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF847CBF1B09304B00E3281D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF847CC11B09304B00E3281D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiftingApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF847CC21B09304B00E3281D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiftingApp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF847CC41B09304B00E3281D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LiftingApp2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftingApp2.app/LiftingApp2";
+			};
+			name = Debug;
+		};
+		BF847CC51B09304B00E3281D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LiftingApp2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftingApp2.app/LiftingApp2";
+			};
+			name = Release;
+		};
+		BFCEB76E1B0C11F100BD41B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LiftingApp2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BFCEB76F1B0C11F100BD41B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LiftingApp2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BFCEB7701B0C11F100BD41B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = LiftingApp2_WatchKit_Extension;
+				INFOPLIST_FILE = "LiftingApp2 WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		BFCEB7711B0C11F100BD41B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = LiftingApp2_WatchKit_Extension;
+				INFOPLIST_FILE = "LiftingApp2 WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF847C9C1B09304B00E3281D /* Build configuration list for PBXProject "LiftingApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF847CBE1B09304B00E3281D /* Debug */,
+				BF847CBF1B09304B00E3281D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF847CC01B09304B00E3281D /* Build configuration list for PBXNativeTarget "LiftingApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF847CC11B09304B00E3281D /* Debug */,
+				BF847CC21B09304B00E3281D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF847CC31B09304B00E3281D /* Build configuration list for PBXNativeTarget "LiftingApp2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF847CC41B09304B00E3281D /* Debug */,
+				BF847CC51B09304B00E3281D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCEB7721B0C11F100BD41B9 /* Build configuration list for PBXNativeTarget "LiftingApp2 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCEB7701B0C11F100BD41B9 /* Debug */,
+				BFCEB7711B0C11F100BD41B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFCEB7731B0C11F100BD41B9 /* Build configuration list for PBXNativeTarget "LiftingApp2 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFCEB76E1B0C11F100BD41B9 /* Debug */,
+				BFCEB76F1B0C11F100BD41B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF847C991B09304B00E3281D /* Project object */;
+}
