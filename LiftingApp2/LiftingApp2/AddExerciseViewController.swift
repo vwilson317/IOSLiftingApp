@@ -9,11 +9,8 @@
 import UIKit
 
 class AddExerciseViewController: UIViewController {
-    var WorkoutObj:Workout
+    var WorkoutObj:Workout?
     @IBOutlet var ViewTitleLabel: UILabel!
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +18,7 @@ class AddExerciseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(animated: Bool) {
-        ViewTitleLabel.text = WorkoutObj.Name
+        ViewTitleLabel.text = WorkoutObj!.Name
     }
 
     override func didReceiveMemoryWarning() {

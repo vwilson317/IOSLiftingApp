@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF811AB71B23DA66001DE463 /* LiftingApp2 WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = BFCEB75F1B0C11F100BD41B9 /* LiftingApp2 WatchKit App.app */; };
 		BF847CA71B09304B00E3281D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF847CA61B09304B00E3281D /* AppDelegate.swift */; };
 		BF847CA91B09304B00E3281D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF847CA81B09304B00E3281D /* ViewController.swift */; };
 		BF847CAC1B09304B00E3281D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF847CAA1B09304B00E3281D /* Main.storyboard */; };
 		BF847CAE1B09304B00E3281D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF847CAD1B09304B00E3281D /* Images.xcassets */; };
 		BF847CB11B09304B00E3281D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF847CAF1B09304B00E3281D /* LaunchScreen.xib */; };
 		BF847CBD1B09304B00E3281D /* LiftingApp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF847CBC1B09304B00E3281D /* LiftingApp2Tests.swift */; };
-		BFCEB7491B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7481B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift */; };
+		BFCEB7491B0AA1F100BD41B9 /* WorkOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7481B0AA1F100BD41B9 /* WorkOutTableViewCell.swift */; };
 		BFCEB74B1B0AA22000BD41B9 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB74A1B0AA22000BD41B9 /* Workout.swift */; };
 		BFCEB74D1B0AA2F900BD41B9 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB74C1B0AA2F900BD41B9 /* WorkoutManager.swift */; };
 		BFCEB7581B0C11F100BD41B9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEB7571B0C11F100BD41B9 /* InterfaceController.swift */; };
@@ -28,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF811AB81B23DA66001DE463 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF847C991B09304B00E3281D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFCEB75E1B0C11F100BD41B9;
+			remoteInfo = "LiftingApp2 WatchKit App";
+		};
 		BF847CB71B09304B00E3281D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF847C991B09304B00E3281D /* Project object */;
@@ -76,7 +84,7 @@
 		BF847CB61B09304B00E3281D /* LiftingApp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftingApp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF847CBB1B09304B00E3281D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF847CBC1B09304B00E3281D /* LiftingApp2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftingApp2Tests.swift; sourceTree = "<group>"; };
-		BFCEB7481B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutCellTableViewCell.swift; sourceTree = "<group>"; };
+		BFCEB7481B0AA1F100BD41B9 /* WorkOutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkOutTableViewCell.swift; sourceTree = "<group>"; };
 		BFCEB74A1B0AA22000BD41B9 /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		BFCEB74C1B0AA2F900BD41B9 /* WorkoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		BFCEB7521B0C11F100BD41B9 /* LiftingApp2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LiftingApp2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +158,7 @@
 				BF847CAD1B09304B00E3281D /* Images.xcassets */,
 				BF847CAF1B09304B00E3281D /* LaunchScreen.xib */,
 				BF847CA41B09304B00E3281D /* Supporting Files */,
-				BFCEB7481B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift */,
+				BFCEB7481B0AA1F100BD41B9 /* WorkOutTableViewCell.swift */,
 			);
 			path = LiftingApp2;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 			);
 			dependencies = (
 				BFCEB76C1B0C11F100BD41B9 /* PBXTargetDependency */,
+				BF811AB91B23DA66001DE463 /* PBXTargetDependency */,
 			);
 			name = LiftingApp2;
 			productName = LiftingApp2;
@@ -363,6 +372,7 @@
 				BF847CAC1B09304B00E3281D /* Main.storyboard in Resources */,
 				BF847CB11B09304B00E3281D /* LaunchScreen.xib in Resources */,
 				BF847CAE1B09304B00E3281D /* Images.xcassets in Resources */,
+				BF811AB71B23DA66001DE463 /* LiftingApp2 WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFCEB7491B0AA1F100BD41B9 /* WorkOutCellTableViewCell.swift in Sources */,
+				BFCEB7491B0AA1F100BD41B9 /* WorkOutTableViewCell.swift in Sources */,
 				BF847CA91B09304B00E3281D /* ViewController.swift in Sources */,
 				BFCEB74D1B0AA2F900BD41B9 /* WorkoutManager.swift in Sources */,
 				BFECE88E1B0C170A004CBFB7 /* AddExerciseViewController.swift in Sources */,
@@ -428,6 +438,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF811AB91B23DA66001DE463 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFCEB75E1B0C11F100BD41B9 /* LiftingApp2 WatchKit App */;
+			targetProxy = BF811AB81B23DA66001DE463 /* PBXContainerItemProxy */;
+		};
 		BF847CB81B09304B00E3281D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF847CA01B09304B00E3281D /* LiftingApp2 */;

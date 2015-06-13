@@ -9,12 +9,12 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
-    let workouts = ["workout1", "workout2", "workout3"];
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.rowHeight = 80;
+        self.tableView.registerNib(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "messageCell")
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -30,7 +30,7 @@ class ViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
         if(segue.identifier == "addexerciseview"){
-            let cell = sender as! WorkOutCellTableViewCell
+            let cell = sender as! WorkOutTableViewCell
             let addexercise = segue.destinationViewController
                 as! AddExerciseViewController
             addexercise.WorkoutObj = cell.WorkoutObj!
@@ -38,21 +38,25 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return workouts.count;
+        return WorkoutManager.workouts.count;
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("customCell") as! UITableViewCell;
+    override func tableView(tableView: (UITableView), cellForRowAtIndexPath
+        indexPath: (NSIndexPath)) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("workoutcell")
+            as! UITableViewCell
         
-        if(indexPath.item % 2 == 0){
-            cell.backgroundColor = UIColor.whiteColor();
+        var anotherCell = cell as! WorkOutTableViewCell
             
+        if(indexPath.item % 2 == 0){
+            anotherCell.backgroundColor = UIColor.whiteColor();
         }
         else{
-            cell.backgroundColor = UIColor.grayColor();
+            anotherCell.backgroundColor = UIColor.grayColor();
         }
-        
-        cell.textLabel!.text = WorkoutManager.GetWorkout(indexPath.item).Name
+        let workout = WorkoutManager.GetWorkout(indexPath.item)
+        anotherCell.textLabel!.text = workout.Name
+        anotherCell.WorkoutObj = workout
         return cell;
     }
 }

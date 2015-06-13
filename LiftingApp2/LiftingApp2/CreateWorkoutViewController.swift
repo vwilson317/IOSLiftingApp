@@ -11,11 +11,17 @@ import UIKit
 class CreateWorkoutViewController: UIViewController {
 
     @IBOutlet var nameInputField: UITextField!
+    @IBOutlet var activityIndicatorIcon: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        nameInputField.enabled = true
+        nameInputField.becomeFirstResponder()
     }
 
     @IBAction func nameFieldEntered(sender: AnyObject) {
@@ -27,11 +33,13 @@ class CreateWorkoutViewController: UIViewController {
     }
     
     @IBAction func saveButton_click(sender: AnyObject) {
-        nameInputField.text = ""
+        activityIndicatorIcon!.startAnimating()
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double (NSEC_PER_SEC)))
+        dispatch_after(time,dispatch_get_main_queue()){
+            self.activityIndicatorIcon.stopAnimating()
+        }
         WorkoutManager.AddWorkout(nameInputField.text)
-    }
-
-    @IBAction func something_click(sender: AnyObject) {
+        nameInputField.text = ""
     }
     /*
     // MARK: - Navigation
